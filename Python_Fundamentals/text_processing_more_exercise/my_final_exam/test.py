@@ -1,0 +1,1 @@
+print(str(lambda x:x*x(5)))
