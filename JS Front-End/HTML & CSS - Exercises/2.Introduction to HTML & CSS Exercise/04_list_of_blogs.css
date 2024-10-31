@@ -1,0 +1,11 @@
+p.highlight {
+    color: rgb(110, 109, 109);
+}
+
+.author {
+    font-weight: bold;
+}
+
+.time {
+    font-style: italic;
+}

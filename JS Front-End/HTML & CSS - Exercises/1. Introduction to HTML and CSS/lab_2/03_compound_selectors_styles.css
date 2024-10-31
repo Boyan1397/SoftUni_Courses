@@ -1,0 +1,33 @@
+p.highlighted {
+    font-size: larger;
+    color: gold;
+}
+
+div#special {
+    padding: 4px;;
+    background-color: grey;
+}
+
+.two.classes {
+    font-style: italic;
+    font-weight: 300;
+    color: blue;
+}
+
+.tomato {
+    color: tomato;
+}
+
+ul li#selected {
+    color:greenyellow;
+}
+
+nav {
+    background-color: blanchedalmond;
+    padding: 10px;
+}
+
+a[href^="http"] {
+    border-bottom: orange;
+    color: orange;
+}

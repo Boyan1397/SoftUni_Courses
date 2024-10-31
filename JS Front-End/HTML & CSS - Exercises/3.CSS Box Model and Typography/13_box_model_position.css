@@ -1,0 +1,32 @@
+body {
+    border: 3px solid pink;
+}
+
+.container {
+    border: 2px solid blue;
+    padding: 3em;
+}
+
+
+.item {
+    width: 5em;
+    height: 5em;
+    border: 2px solid green;  
+}
+
+.item1 {
+    background-color: red;
+    position: relative;
+    
+}
+
+.item2 {
+    background-color: purple;
+    position: absolute;
+    left: 5em;
+    top: 11em;
+}
+
+.item3 {
+    background-color: lightgreen;
+}

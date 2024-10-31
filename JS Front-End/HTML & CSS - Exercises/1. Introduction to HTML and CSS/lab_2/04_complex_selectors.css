@@ -1,0 +1,60 @@
+h1.header {
+    font-style: bold;
+}
+
+h1.header::before {
+    content: "<<";
+    color: brown;
+    font-size: larger;
+}
+
+h1.header::after {
+    content: ">>";
+    color: brown;
+    font-size: larger;
+}
+
+nav ul#highlight li {
+    font-style: italic;
+}
+
+nav ul#highlight li:first-child {
+    background-color:crimson;
+    color: blue;
+}
+
+nav ul#highlight li:nth-child(2) {
+    background-color: darkslategray;
+    color: lightcoral;
+}
+
+nav ul#highlight li:nth-child(3) {
+    background-color: rgb(88, 232, 232);
+    color: rgb(131, 0, 0);
+}
+
+nav ul#highlight li:hover {
+    background-color: yellow;
+}
+
+div > section {
+    background-color: lightslategray;
+}
+
+header + section.special {
+    color: gold;
+}
+
+section ~ article {
+    font-style: bold;
+    color: lightgreen;
+    background-color: brown;
+}
+
+#image {
+    border-color: red;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 1ch;
+    
+}

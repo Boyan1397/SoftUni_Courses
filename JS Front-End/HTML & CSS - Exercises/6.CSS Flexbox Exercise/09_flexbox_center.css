@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 16px/1.5 Lato, sans-serif;
+    padding: 2em;
+    background-color: #EEEEEE;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.site-container {
+    background-color: white;
+    border-radius: 0.3em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.1);
+    max-width: 600px;
+    padding: 2em;
+}
+
+.site-container > * {
+    margin: 1em 0;
+}
+
+.site-container > h2 {
+    margin: 0;
+}
+
+.site-container ul {
+    padding-left: 2em;
+}

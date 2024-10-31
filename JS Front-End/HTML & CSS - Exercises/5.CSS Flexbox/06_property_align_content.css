@@ -1,0 +1,36 @@
+.container {
+    border: 2px solid blue;
+    padding: 1em;
+    width: 450px;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    
+}
+
+.flex-item {
+    border: 2px solid black;
+    padding: 1.5em;
+    background-color: lightgrey;
+}
+
+.container.align-content-flex-start {
+    align-content: flex-start;
+}
+
+.container.align-content-center {
+    align-content: center;
+}
+
+.container.align-content-flex-end {
+    align-content: flex-end;
+}
+
+.container.align-content-space-between {
+    align-content: space-between;
+}
+
+.container.align-content-space-around {
+    align-content: space-around;
+}

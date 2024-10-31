@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    border: 2px solid green;
+    padding: 2em;
+}
+
+.site {
+    max-width: 900px;
+    border: 2px solid blue;
+    padding: 2em;
+    margin: 0 auto;
+}
+
+.site > * {
+    border: 2px solid black;
+    padding: 1.6em;
+    text-align: center;
+    font-family: serif;
+}
+
+.site > * + * {
+    margin-top: 1.5em;
+}

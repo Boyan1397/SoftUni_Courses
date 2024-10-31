@@ -27,12 +27,12 @@ class MovieWorld:
             self.dvds.append(dvd)
 
     def rent_dvd(self, customer_id: int, dvd_id: int):
-        customer = [cust for cust in self.customers if cust.id == customer_id][0]
-        dvd = [d for d in self.dvds if d.id == dvd_id][0]
+        customer = next(filter(lambda c: c.id == customer_id, self.customers))
+        dvd = next(filter(lambda d: d.id == dvd_id, self.dvds))
         if dvd in customer.rented_dvds:
             return f"{customer.name} has already rented {dvd.name}"
 
-        if dvd.is_rented and dvd not in customer.rented_dvds:
+        if dvd.is_rented:
             return "DVD is already rented"
 
         if customer.age < dvd.age_restriction:
@@ -43,8 +43,8 @@ class MovieWorld:
         return f"{customer.name} has successfully rented {dvd.name}"
 
     def return_dvd(self, customer_id: int, dvd_id: int):
-        customer = [cust for cust in self.customers if cust.id == customer_id][0]
-        dvd = [d for d in self.dvds if d.id == dvd_id][0]
+        customer = next(filter(lambda c: c.id == customer_id, self.customers))
+        dvd = next(filter(lambda d: d.id == dvd_id, self.dvds))
 
         if dvd not in customer.rented_dvds:
             return f"{customer.name} does not have that DVD"

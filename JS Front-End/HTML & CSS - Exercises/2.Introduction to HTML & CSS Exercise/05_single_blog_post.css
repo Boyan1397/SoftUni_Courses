@@ -1,0 +1,16 @@
+.main-header {
+    background-color: lightslategray;
+}
+
+.content {
+    background-color:rgb(174, 191, 208);
+}
+
+.comments {
+    background-color: darkblue;
+    color: white;
+}
+
+.quote {
+    font-style: italic;
+}

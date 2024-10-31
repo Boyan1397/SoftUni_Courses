@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+
+    box-sizing: border-box;
+}
+
+section {
+    background-image: url(photos/image2.jpg);
+    width: 100%;
+    height: 600px;
+    background-position:center;
+    background-size: cover;
+}
+
+header {
+    font-size: 20px;
+    font-family: Lato, sans-serif;
+    padding: 270px;
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+
+}
+

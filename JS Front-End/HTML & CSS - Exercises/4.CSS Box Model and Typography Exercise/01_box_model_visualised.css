@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 600px;
+    margin: 3em auto;
+    
+}
+
+.container div {
+    border: 1px dashed black;
+    padding: 2em;
+}
+
+div.margin {
+    background-color: #FF966F;
+    padding-top: 0;
+}
+
+div.border {
+    background-color: #FFE8C6;
+    padding-top: 0;
+}
+
+div.padding {
+    background-color: #85EB85;
+    padding-top: 0;
+}
+
+div.content {
+    background-color: #A3D2E2;
+    text-align: center;
+    padding: 1em;
+}
+
+.margin::before {
+    display: block;
+    content: "margin";
+    margin-bottom: 1em;
+    margin-left: -1em;
+}
+
+.border::before {
+    display: block;
+    content: "border";
+    margin-bottom: 1em;
+    margin-left: -1em;
+    
+}
+
+.padding::before {
+    display: block;
+    content: "padding";
+    margin-bottom: 1em;
+    margin-left: -1em;
+}

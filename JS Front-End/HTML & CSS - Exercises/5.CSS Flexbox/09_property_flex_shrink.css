@@ -1,0 +1,33 @@
+.container {
+    border: 2px solid blue;
+    padding: 1em;
+    max-width: 300px;
+    display: flex;
+}
+
+.flex-item {
+    border: 2px solid black;
+    padding: 1em;
+    background-color: lightgrey;
+    flex-basis: 300px;
+}
+
+.container .flex-item-shrink-one .flex-item{
+    flex-shrink: 1;
+}
+
+.container.flex-shrink-zero .flex-item{
+    flex-shrink: 0;
+}
+
+.container.flex-shrink-second-child .flex-item:nth-child(2){
+    flex-shrink: 1;
+}
+
+.container.flex-shrink-second-child .flex-item:nth-child(1){
+    flex-shrink: 0;
+}
+
+.container.flex-shrink-second-child .flex-item:nth-child(3){
+    flex-shrink: 0;
+}

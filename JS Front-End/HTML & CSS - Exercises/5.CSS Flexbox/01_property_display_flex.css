@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 1em;
+}
+
+.container {
+    border: 2px solid blue;
+    padding: 1em;
+    max-width: 400px;
+    margin-top: 1em;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.flex-item {
+    border: 2px solid black;
+    padding: 1em;
+    background-color: lightgrey;
+}
+

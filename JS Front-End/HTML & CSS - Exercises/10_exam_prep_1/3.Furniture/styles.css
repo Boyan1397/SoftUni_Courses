@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i|PT+Serif:400,400i,700,700i&amp;display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: auto;
+    height: 100%;
+}
+
+html {
+    font-family: 'PT Sans', sans-serif;
+}
+
+body, input, textarea {
+    font-family: inherit;
+}
+
+body {
+    background-image: url(images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center -18em;
+    background-size: 1920px;
+    
+}
+
+
+
+/*site-header*/
+
+.site-header {
+    display: flex;
+    justify-content: space-around;
+    padding: 2.5em 0 8rem 0;
+    align-items: center;
+}
+
+
+.site-nav ul{
+    display: flex;
+    list-style: none outside;
+    gap: 1em;
+}
+
+.site-nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+h1 {
+    font-size: 3rem;
+    padding-bottom: 2.5rem;
+}
+
+.banner {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 8.5rem;
+}
+
+.banner p {
+    font-size: 1.3rem;
+}
+
+.button {
+    width: 7rem;
+    margin: 0 auto;
+    margin-top: 3rem;
+    opacity: 0.9;
+    border-radius: 0.4em;
+    padding: 0.7rem;
+    background-color: #E7EEF0;
+}
+
+.button p {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.site-logo {
+    width: 6rem;
+    height: 6rem;
+}
+
+/* site-catalog */
+.site-catalog {
+    padding: 2.5rem 0 2.5rem 0;
+    background: #60ACC1; 
+}
+
+.wrapper {
+    padding: 0;
+}
+
+.flex-catalog {
+    display: flex;
+    gap: 13rem;
+    justify-content: center;
+
+    
+}
+
+.flex-catalog article {
+    display: flex;
+    background: white;
+    flex: 0 1 30%;
+    border-right: 0.6rem solid #60ACC1;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.5);
+    
+    
+}
+
+article .image-wrapper {
+    flex: 0 1 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+article .catalog-text {
+    padding: 2em;
+    flex: 0 1 50%;
+
+}
+
+article img {
+    position: absolute;
+}
+
+.catalog-text h4 {
+    padding-bottom: 1.2rem;
+    text-align: center;
+}
+
+.catalog-text p {
+    padding-bottom: 1.6rem;
+}
+
+.catalog-title {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.catalog-title h3 {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* furniture */
+.site-furniture {
+    display: flex;
+    padding: 3em 0rem;
+    gap: 7rem;
+    justify-content: center;
+    background-color: white;
+}
+
+.site-furniture article {
+    flex: 0 1 23%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.9rem;
+}
+
+.site-furniture article h3 {
+    font-size: 1.3rem;
+    padding-bottom: 0.5rem;
+    opacity: 0.7;
+}
+
+.site-furniture article p {
+    text-align: center;
+    opacity: 0.7;
+}
+
+.site-furniture img {
+    width: 9rem;
+    height: 9rem;
+    display: block;
+}
+
+.site-furniture .furniture-wrapper {
+    width: 9rem;
+    height: 9rem;
+}
+
+/* Gallery */
+
+.site-gallery {
+    background-color: #60ACC1;
+    padding: 2.5rem 0 2.5rem 0;
+    width: 100%;
+}
+
+.gallery-header {
+    text-align: center;
+    padding-bottom: 2rem;
+
+}
+
+.gallery-header h3 {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.gallery-header p {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+.gallery-wrapper {
+    width: 100%;
+    display: flex;
+    gap: 6rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-image-wrapper {
+    max-width: 450px;
+    height: 294px;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.4);
+    overflow: hidden;
+}
+
+.gallery-image-wrapper img {
+    width: 100%;
+}
+
+/* About */
+
+.about {
+    padding: 2.5rem;
+    text-align: center;
+    opacity: 0.7;
+}
+
+.about-heading > h3 {
+    font-size: 1.4rem;
+}
+
+.about-heading > p {
+    font-style: italic;
+}
+
+.about .paragraph{
+    padding-top: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* footer */
+footer {
+    background-color: #2D333C;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}

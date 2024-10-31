@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="demo.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+    
+    <form action="#" class="registration">
+        <h2>Registration</h2>
+
+        <fieldset>
+            <legend>Login Information</legend>
+            <p class="field">
+                <input type="text" name="full-name" id="full-name" placeholder="eg: John Doe">
+                <label for="full-name">Full Name</label>
+            </p>
+
+            <p class="field email">
+                <input type="email" name="email" id="email" required placeholder="eg: bobo@email.com">
+                <label for="email">Email</label>
+                <span class="helper">Required email</span>
+            </p>
+
+            <p class="field">
+                <input type="password" name="pass" id="pass" required>
+                <label for="pass">Password</label>
+                <span class="helper">Required password</span>
+            </p>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Additional Information</legend>
+            <p class="field">
+                <input type="text" name="desc" id="desc">
+                <label for="desc">Self Description</label>
+            </p>
+
+            <p class="field">
+                <textarea name="area" id="area"></textarea>
+                <label for="area">Bio</label>
+            </p>
+
+            <p class="field">
+                <select name="ages" id="ages">
+                    <option value="selects">Select your age types</option>
+                    <option value="option1">18-22</option>
+                    <option value="option2">22-28</option>
+                    <option value="option3">28-35</option>
+                    <option value="option4">35-60</option>
+                </select>
+            </p>
+
+        </fieldset>
+
+        <input type="submit" value="Send Request">
+    </form>
+</body>
+</html>

@@ -1,0 +1,85 @@
+body {
+    padding: 1em;
+}
+
+html {
+    font: 16px/1.5 Helvetica, sans-serif;
+}
+
+body, table, button {
+    font: inherit;
+}
+
+h1 {font-size: 2.6em;}
+h2 {font-size: 2.2em;}
+h3 {font-size: 1.8em;}
+h4 {font-size: 1.6em;}
+h5 {font-size: 1.4em;}
+h6 {font-size: 1.2em;}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+
+hr, h6 {
+    margin-bottom: 1.5rem;
+}
+
+p, ul, ol {
+    padding-bottom: 1.5rem;
+}
+
+ol, ul {
+    padding-left: 2em;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+    padding-bottom: 0;
+}
+
+blockquote {
+    font-style: italic;
+    border-left: solid 4px lightgrey;
+    padding-left: 2em;
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+blockquote :last-of-type {
+    padding-bottom: 0;
+}
+
+.author {
+    text-align: right;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+table, tr, td{
+    border: 1px solid rgb(62, 61, 61);
+    border-collapse: collapse;
+}
+
+tr th, tr td {
+    text-align:left;
+}
+
+table tr:nth-child(odd) {
+    background-color:rgb(176, 183, 189);
+}
+
+table tr:nth-child(even) {
+    background-color:rgb(227, 229, 232);
+}
+
+table tr:first-child {
+    background-color: gray;
+}

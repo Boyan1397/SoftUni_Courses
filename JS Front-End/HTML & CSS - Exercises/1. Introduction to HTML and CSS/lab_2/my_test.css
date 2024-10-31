@@ -1,0 +1,30 @@
+li {
+    color: blue;
+}
+
+li:hover {
+    color: lightblue;
+    font-size: 20pxs;
+}
+
+li:not(:hover) {
+    background-color: blanchedalmond;
+}
+
+li:active {
+    color: red;
+}
+
+a:visited {
+    color: greenyellow;
+}
+
+
+#example p {
+    color: green;
+    display: none;
+}
+
+#example:hover p {
+    display: block;
+}

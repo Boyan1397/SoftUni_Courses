@@ -1,0 +1,21 @@
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font: 16px/1.5 Verdana, serif;
+}
+
+.container {
+    border: 0.5em solid blue;
+    padding: 1.5em;
+    margin-bottom: 1em;
+}
+
+.cont {
+    border: 0.5em solid red;
+    padding-left: 4em;
+    margin-left: 3em;
+
+}

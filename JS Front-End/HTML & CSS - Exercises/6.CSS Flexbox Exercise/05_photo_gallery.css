@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    background-color: #eee;
+}
+
+.gallery-container {
+    width: 80%;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+ 
+.image-container {
+    flex: 0 0 calc((100% / 3) - 20px);
+    padding: 5px;
+    background-color: white;
+    border: 10px solid black;
+    border-radius: 0.3em;
+}
+
+figure {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+figure > img {
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.3);
+    border-radius: 0.3em;
+}
+
+figure > p {
+    font: 13px/1.5 Lato;
+    font-style: italic;
+    opacity: 0.7;
+}

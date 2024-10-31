@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    border: 2px solid green;
+    padding: 2em;
+}
+
+.box {
+    border: 2px solid black;
+    padding: 2em;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 900px;
+    text-align: center;
+}
+
+.box > *{
+    border: 2px solid blue;
+    padding: 2em;
+}
+
+.box + .box {
+    margin-top: 2em;
+}

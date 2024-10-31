@@ -1,0 +1,29 @@
+h1 {
+    color: tomato;
+}
+
+p {
+    font-size: medium;
+}
+
+.highlight {
+    background-color: darkcyan;
+}
+
+#main-title {
+    color: mediumslateblue;
+}
+
+#special-paragraph {
+    font-style: italic;
+}
+
+#div {
+    background-color: darkolivegreen;
+}
+
+.unordered {
+    font-style: oblique;
+    font-size: larger;
+    color: darkblue;
+}

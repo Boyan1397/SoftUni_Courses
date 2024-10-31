@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    font-family: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* header */
+.site-header {
+    background-color: #000000;
+    color: #FFFFF3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0.2em;
+    width: 100%;
+    
+}
+
+.site-header .logo-media{
+    width: 5.5em;
+    height: auto;
+}
+
+.site-header .logo-media img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.main-nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.7em;
+    padding-right: 1.3em;
+}
+
+.main-nav ul a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+/* main-important */
+
+.main-important {
+    width: 100%;
+    position: relative;
+}
+
+.notes {
+    width: 45%;
+    position: absolute;
+    top: 60px;
+    z-index: -1;
+    
+}
+
+.notes img {
+    width: 100%;
+}
+
+.main-important {
+    position: relative;
+}
+
+.green-part {
+    background-color: #1DB954;
+    width: 100%;
+    height: 60%;
+    position: absolute;
+    z-index: -2;
+}
+
+
+
+ /* main-cards */
+ 
+ .cards-wrapper {
+    max-width: 80%;
+    margin: 0 auto;
+ }
+
+.cards-flex {
+    display: flex;
+    justify-content: center;
+    gap: 11rem;
+}
+
+.cards-flex .card {
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    background-color: #FFFFFF;
+    border: 2px solid black;
+    border-radius: 0.4em;
+}
+
+.plan-title {
+    text-align: center;
+    color: #FFFFFF;
+    padding: 2em 0 ;
+    font-size: 1.4em;
+}
+
+.card h2 {
+    text-align: center;
+    padding: 1.5em 1em 0;
+    font-size: 1.4.5rem;
+    opacity: 0.7;
+}
+
+.card ul {
+    list-style-type: circle;
+    padding: 2.2em 4.5em;
+    opacity: 0.7;
+    
+}
+
+.card ul li + li {
+    margin-top: 0.7em;
+}
+
+.card .button {
+    text-align: center;
+    background-color: #1DB954;
+    width: 17em;
+    margin: 0 auto;
+    border-radius: 2em;
+    padding: 0.8em 0;
+    margin-bottom: 2em;
+    margin-top: -1em;
+}
+
+.card .button a{
+    text-decoration: none;
+    color: white;
+    padding: 1em 2em;
+    font-weight: bold;
+}
+
+.pricing {
+    display: flex;
+    background-color: #191414;
+    color: #FFFFFF;
+    padding: 1em 0;
+    justify-content: center;
+    gap: 2em;
+    height: 100%;
+    font-size: 1.2rem;
+}
+
+.card.one h2{
+    padding-bottom: 0.8em;
+}
+
+.card.one .pricing {
+    position: relative;
+}
+
+.card.one .pricing p:first-child::after {
+    content: "";
+    border-right: 1px solid white;
+    height: 2.3em;
+    position: absolute;
+    left: 11.5em;
+    top: 0.5em;
+    bottom: 0.3em;
+    
+}
+
+
+.card .button {
+    margin-top: 0.3em;
+}
+
+/* description */
+.main-description {
+    margin-top: 130px;
+    display: flex;
+    gap: 6em;
+    align-items: center;
+    padding: 0 8em 4em 4.71em;
+}
+
+.description-text {
+    flex: 1 1 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3em;
+}
+
+.description-text h4 {
+    font-size: 1.2em;
+    flex-grow: 1;
+}
+
+.description-text p {
+    font-size: 1rem;
+}
+
+.description-image-wrapper {
+    flex: 0 1 440px;
+}
+
+.description-image-wrapper img {
+    width: 100%;
+    height: auto;
+}
+
+/* pros-table */
+
+.pros {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.pros-text {
+    margin-bottom: 2em;
+}
+
+.pros-text h1 {
+    font-size: 2.4rem;
+    margin-bottom: 2.2rem;
+}
+
+.table {
+    max-width: 1100px;
+    margin: 0 auto;
+    border-radius: 0.4em;
+    overflow: hidden;
+}
+
+.table .row {
+    display: flex;
+    padding: 0.7em;
+    justify-content: space-between;
+}
+
+.row .icons {
+    display: flex;
+    gap: 8em;
+    padding-right: 5em;
+}
+
+.table .row:nth-child(even) {
+    background-color: #81D8A0;
+}
+
+.table .row:nth-child(odd) {
+    background-color: #CCCBCB;
+}
+
+/* footer */
+
+.site-footer {
+    padding: 2em;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+}

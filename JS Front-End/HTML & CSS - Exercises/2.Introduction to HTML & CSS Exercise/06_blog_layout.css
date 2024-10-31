@@ -1,0 +1,30 @@
+.main-header {
+    background-color: lightsteelblue;
+}
+
+.main-header h1 {
+    color: rgb(40, 162, 166);
+}
+
+li:hover {
+    background-color: lightseagreen;
+    color: greenyellow;
+}
+
+.content {
+    background-color: lightsteelblue;
+    border-style: solid;
+    border-color: black;
+}
+
+.sidebar {
+    background-color: rgb(127, 186, 37);
+}
+.sidebar nav > #author-info {
+    color: blueviolet;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.footer {
+    background-color:tomato;
+}

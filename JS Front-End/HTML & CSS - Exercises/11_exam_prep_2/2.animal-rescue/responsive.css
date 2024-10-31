@@ -1,0 +1,55 @@
+@media screen and (max-width: 600px) {
+
+    header {
+        padding: 2rem 0;
+    }
+
+    header nav {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 70%;
+    }
+   
+    header nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header nav img {
+        display: block;
+        padding-bottom: 1rem;
+    }
+    
+    .header-title {
+        max-width: 80%;
+        margin-top: 0.5rem;
+    }
+
+    .header-title {
+        padding: 0;
+    }
+
+    .our-dogs ul {
+        gap: 35px 40px;
+        padding-bottom: 2em;
+    }
+
+    .our-dogs ul li {
+        flex: 0 1 calc(50% - 40px);
+    }
+
+    .our-dogs ul li img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .helpNeed ul {
+        flex-direction: column;
+    }
+}

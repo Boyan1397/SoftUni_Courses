@@ -1,0 +1,86 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 2em;
+    font: 14px/1.5 "Montserrat";
+    background-color: rgb(38, 37, 37);
+}
+
+header {
+    margin: 0 auto;
+    background-color: #1E1E1E;
+    border-radius: 0.3em;
+    padding: 1em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10em;
+}
+
+.nav_links {
+    display: flex;
+    gap: 2em;
+}
+
+.nav_links li > a{
+    font-size: 1.2em;
+    color: rgb(199, 193, 193);
+    padding: 2em;
+}
+
+button, a, li {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+
+}
+
+svg {
+    width: 5em;
+    height: 5em;
+    flex-shrink: 0;
+    color: rgb(0, 150, 224)
+}
+
+button {
+    color: rgb(219, 216, 216);
+    background-color: rgb(0, 150, 224);
+    border: none;
+    width: auto;
+    font-size: 1em;
+    height: 3em;
+    border-radius: 1em;
+    padding: 0 2em;
+}
+
+.nav_links li > a:hover {
+    color: rgb(0, 150, 224);}
+
+svg:hover {
+    cursor: pointer;
+}
+
+button:hover {
+    cursor: pointer;
+    color: black;
+}
+
+.nav_links li {
+    position: relative;
+}
+
+.nav_links li > ul {
+    display: none;
+}
+
+.nav_links li:hover > ul {
+    display: block;
+    position: absolute;
+    width: 200px;
+}

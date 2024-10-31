@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    border: 2px solid green;
+}
+
+div {
+    border: 3px solid black;
+    margin-bottom: 1em;
+}
+
+.fixed {
+    width: 300px;
+}
+
+.percentage {
+    width: 50%;
+}
+
+.viewport {
+    width: 50vw;
+}
+
+.min-max {
+    min-width: 100px;
+    max-width: 300px;
+}
+
+.hundred {
+    background-color: aqua;
+    width: 100%;
+    padding: 2em;
+}

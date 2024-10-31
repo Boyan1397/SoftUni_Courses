@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    font: 16px/1.5 Lato;
+    border: 1px solid rgb(191, 190, 190);
+    max-width: 600px;
+    margin: 2em auto;
+}
+
+.heading1 {
+    font-weight: bold;
+    border:  1px solid rgb(191, 190, 190);
+    padding: 1em;
+}
+
+.heading2 {
+    font-weight: bold;
+    border:  1px solid rgb(191, 190, 190);
+    padding: 1em;
+}
+
+p {
+    margin-top: 1em;
+}
+
+p:last-of-type {
+    padding-bottom: 1.5em;
+}
+
+
+.heading3 {
+    font-weight: bold;
+    border:  1px solid rgb(191, 190, 190);
+    padding: 1em;
+}

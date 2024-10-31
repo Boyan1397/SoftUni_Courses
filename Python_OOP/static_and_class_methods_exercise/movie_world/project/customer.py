@@ -11,5 +11,6 @@ class Customer:
         self.rented_dvds: List[DVD] = []
 
     def __repr__(self):
+
         return (f"{self.id}: {self.name} of age {self.age} has {len(self.rented_dvds)}"
-                f" rented DVD's ({', '.join(dvd.name for dvd in self.rented_dvds if dvd.is_rented)})")
+                f" rented DVD's ({', '.join(dvd.name for dvd in self.rented_dvds)})")

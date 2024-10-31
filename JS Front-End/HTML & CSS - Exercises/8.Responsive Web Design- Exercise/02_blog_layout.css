@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 14px/1.5 "Lato";
+    padding: 2em;
+    background-color: #eee;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 0.4em;
+    overflow: hidden;
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header > h1 {
+    padding: 1em 1.5em;
+    color: #090;
+    
+}
+
+header > nav {
+    background-color: #333;
+}
+
+header > nav ul {
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+}
+
+header nav li {
+    display: block;
+    list-style: none outside;
+    color: #eee;
+    flex: 1 1 auto;
+}
+
+header nav a {
+    display: block;
+    padding: 1.5em;
+    border-bottom: 1px solid #eee;
+}
+
+header nav a:hover {
+    background-color: #090;;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    padding: 4em;
+    gap: 4em;
+}
+
+.main h2 {
+    padding-bottom: 1em;
+    color: #333;
+}
+
+.main p {
+    padding-bottom: 1.5em;
+}
+
+.main p:last-child {
+    padding-bottom: 0;
+}
+
+.main > main {
+    flex: 1 0 60%;
+}
+
+.main > aside {
+    flex: 1 1 30%;
+}
+
+footer {
+    background-color: #333;
+    text-align: center;
+    padding: 1.5em;
+
+}
+
+footer > p {
+    color: #eee;
+}
+
+@media (min-width: 600px) {
+    .main {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    header > nav ul {
+        display: flex;
+        flex-direction: row;
+        text-align: start;
+   }
+}
