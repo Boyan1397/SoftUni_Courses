@@ -3,7 +3,7 @@ function countStrings(text, word) {
         .split(' ')
         .filter(wrd => wrd === word)
         .length
-
+    
     return text
 }
 

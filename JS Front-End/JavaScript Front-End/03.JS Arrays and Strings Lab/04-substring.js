@@ -7,4 +7,4 @@ function getSubstring(string, start, count) {
 console.log(getSubstring('ASentence', 1, 8));
 console.log(getSubstring('SkipWord', 4, 7));
 
-console.log(getSubstring("HelloWorld", 2, 4));
+console.log(getSubstring("HelloWorld", 2, 3));
