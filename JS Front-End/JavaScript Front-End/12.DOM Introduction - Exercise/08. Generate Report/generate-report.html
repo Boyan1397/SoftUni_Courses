@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <title>Dataset</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Generate Report</title>
 
+    <link rel="stylesheet" href="generate-report.css">
+</head>
 <body>
+
     <main>
+    
         <table>
             <thead>
                 <tr>
-                    <th>Employee <input type="checkbox" name="employee"></th>
-                    <th>Department <input type="checkbox" name="deparment"></th>
+                    <th>Employee <input type="checkbox" name="employee" checked></th>
+                    <th>Department <input type="checkbox" name="deparment" checked></th>
                     <th>Status <input type="checkbox" name="status"></th>
                     <th>Date Hired <input type="checkbox" name="dateHired"></th>
                     <th>Benefits <input type="checkbox" name="benefits"></th>
@@ -204,14 +207,18 @@
                 </tr>
             </tbody>
         </table>
+
         <div>
-            <button onclick="generateReport()">Generate Report</button>
+            <button onclick="solve()">Generate Report</button>
         </div>
+
         <div>
             <textarea id="output"></textarea>
         </div>
-    </main>
-    <script src="report.js"></script>
-</body>
 
+    </main>
+    
+    <script src="generate-report.js"></script>
+
+</body>
 </html>
