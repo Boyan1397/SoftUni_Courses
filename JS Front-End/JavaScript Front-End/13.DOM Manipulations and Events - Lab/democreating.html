@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+</head>
+<body>
+    <h1>DOM Manipulation</h1>
+
+    <h4>Movie List</h4>
+    <ul class="movie-list">
+        <li>Godfather</li>
+        <li>Scarface</li>
+        <li>Green Mile</li>
+        <li>
+            <span>Using event listener</span>
+            <button id="my-button">Click me!</button>
+        </li>
+    </ul>
+    
+    <script>
+        // get the element where you want it to be added
+        let movieListElement = document.querySelector('.movie-list')
+        // create new item
+        let newListItemElement = document.createElement('li')
+        
+        let oneMoreListItem = document.createElement('li')
+
+        // give the new item new textContent, class...etc
+        newListItemElement.textContent = 'Star Wars'
+
+        oneMoreListItem.textContent = 'Lion King'
+        // insert it where you want to
+        movieListElement.appendChild(newListItemElement)
+        // can insert one or more
+        movieListElement.append(oneMoreListItem)
+        // insert before all
+        movieListElement.prepend(oneMoreListItem)
+
+        // DEMO 2
+        // clone and insert
+        let firstMovieElement = movieListElement.children[0];
+        let firstMovieElementClone = firstMovieElement.cloneNode(true)
+
+        firstMovieElementClone.textContent = firstMovieElementClone.textContent + ' 2'
+        movieListElement.appendChild(firstMovieElementClone)
+
+        // Removing
+        newListItemElement.remove()
+
+        // event handling with event listener
+        let buttonToClick = document.getElementById('my-button')
+        buttonToClick.addEventListener('click', () => {
+            console.log('this is handling with the listener');
+        })
+
+        // adding event handler with outer function
+        function secondEventHandler() {
+            console.log('this is to be removed bro');   
+        }
+
+        buttonToClick.addEventListener('click', secondEventHandler)
+        
+        // removing event handler (we gotta have it from external func)
+        setTimeout(() => {
+            buttonToClick.removeEventListener('click', secondEventHandler)
+        }, 5000);
+
+
+    </script>
+</body>
+</html>

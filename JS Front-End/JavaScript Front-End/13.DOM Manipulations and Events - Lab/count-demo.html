@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>increase</h3>
+    <div id="count">0</div>
+    <button id="increase">+</button>
+
+    <h3>decrease</h3>
+    <div id="counter">10</div>
+    <button id="decrease">-</button>
+    <button id="zero">ZERO</button>
+
+    <script>
+        //  increase
+        let counterElement = document.getElementById('count')
+        let increaseElement = document.getElementById('increase')
+
+        increaseElement.addEventListener('click', function () {
+            counterElement.textContent = Number(counterElement.textContent) + 1
+        })
+
+        //  decrease
+        let countElement = document.getElementById('counter')
+        let decreaseElement = document.getElementById('decrease')
+
+        decreaseElement.addEventListener('click', () => {
+            countElement.textContent = Number(countElement.textContent) - 1
+        })
+
+        // zero it
+        let zeroElement = document.getElementById('zero')
+        zeroElement.addEventListener('click', () => {
+            countElement.textContent = 0
+        })
+
+
+        
+    </script>
+</body>
+</html>
